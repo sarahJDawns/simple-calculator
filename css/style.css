@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  overflow: hidden;
+  background: lightsteelblue;
+  color: rgb(48, 48, 48);
+}
+
+#calculator {
+  display: block;
+  background: rgb(53, 53, 53);
+  margin: 5% auto;
+  width: 400px;
+  padding-bottom: 25px;
+  border-radius: 6%;
+}
+
+#screen {
+  background: rgb(235, 235, 235);
+  height: 1.25em;
+  width: 305px;
+  margin: 3rem;
+  text-align: right;
+  font-size: 4.5rem;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+#pad {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 0 2em;
+  justify-content: center;
+}
+
+button {
+  width: 4.1rem;
+  background: rgb(235, 235, 235);
+  border-radius: 100%;
+  text-align: center;
+  font-size: 4em;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  border: 1px solid rgb(46, 46, 47);
+}
+
+button:hover {
+  cursor: pointer;
+  background: rgb(204, 204, 204);
+}
+
+button.clear {
+  background: rgb(246, 62, 12);
+}
+
+button.clear:hover {
+  background: rgb(217, 53, 7);
+}
+
+button.equal {
+  background: rgb(246, 160, 12);
+  width: 280px;
+  border-radius: 4px;
+}
+
+button.equal:hover {
+  background: rgb(218, 141, 10);
+}
+
+button.operator,
+button.decimal {
+  background: rgb(0, 189, 180);
+}
+
+button.operator:hover,
+button.decimal:hover {
+  background: rgb(3, 170, 162);
+}
